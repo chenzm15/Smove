@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="smove.css" />
+        <title>Smove by Chen Zimiao</title>
+    </head>
+    <body onload="draw();">
+        <div id="center">
+            <canvas id="gameRegion" width="600" height="711" tabindex="0"></canvas>
+            <div id="menuHref"><a onclick="backToMenu();">MENU</a></div>
+            <div id="stop" class="start"><a onclick="gameStop();">STOP</a></div>
+            <div id="score">0</div>
+            <div id="init" class="start">
+                <div id="name">SMOVE</div>
+                <div id="best_score">YOUR BEST:&emsp;<span id="init_best"></span></div>
+                <button id="skip" onclick="startGame();">PLAY</button>
+            </div>
+            <div id="over" class="hidden">
+                <div id="over_tip">GAME OVER</div>
+                <div id="over_score">
+                    <p>Your score:&emsp;<span id="final_score"></span></p>
+                    <p class="best">Your best score:&emsp;<span id="over_best"></span></p>
+                </div>
+                <ul class="buttons">
+                    <li><button id="restart" onclick="startGame();">RESTART</button></li>
+                    <li><button id="back" onclick="backToMenu();">MENU</button></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="smove.js"></script>
+    </body>
+</html>

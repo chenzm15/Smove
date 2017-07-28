@@ -1,0 +1,172 @@
+body {
+    background: #E6E6E6;
+    min-width: 800px;
+    min-height: 718px;
+    font-family: "KaiTi", "SimHei", "Microsoft YaHei", "Apple LiGothic Medium";
+}
+
+#center {
+    margin: auto; 
+    position: relative;
+    width: 800px;
+    height: 718px;
+}
+
+#name {
+    position: absolute;
+    left: 250px;
+    top: 160px;
+    font-family: "Aharoni", "Berlin Sans FB", "Cooper Black";
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+}
+
+#best_score {
+    position: absolute;
+    left: 210px;
+    top: 310px;
+    font-family: "Cooper Black", "Berlin Sans FB", "Aharoni";
+    font-size: 40px;
+    color: white;
+}
+
+#skip {
+    position: absolute;
+    left: 270px;
+    top: 480px;
+    width: 250px;
+    height: 60px;
+    background: red;
+    font-size: 32px;
+    color: white;
+    border: 1px solid #242424;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#skip:hover {
+    background: orangered;
+}
+
+#init.play, #init.over, #init.change {
+    display: none;
+}
+
+#menuHref, #stop {
+    position: absolute;
+    left: 120px;
+    top: 20px;
+    color: white;
+    font-family: "Cooper Black", "Berlin Sans FB", "Aharoni";
+    text-decoration: none;
+}
+
+#stop {
+    left: 610px;
+    top: 20px;    
+}
+
+#menuHref.start, #menuHref.over, #stop.start, #stop.over, #stop.change {
+    display: none;
+}
+
+#menuHref:hover, #stop:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+#score.start, #score.over {
+    display: none;
+}
+
+#score.play {
+    display: block;
+    position: absolute;
+    left: 364px;
+    top: 100px;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Impact", "Segoe Marker";
+    font-size: 36px;
+    color: white;
+}
+
+canvas { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white; 
+}
+
+#over {
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    width: 350px;
+    height: 240px;
+    background: white;
+    border: 2px solid #a1a1a1;
+    border-radius: 25px;
+}
+
+#over.hidden {
+    display: none;
+}
+
+#over_tip {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-family: "Aharoni", "Berlin Sans FB", "Cooper Black";
+    font-size: 40px;
+}
+
+#over_score {
+    position: relative;
+    top: 22px;
+    left: 32px;
+    font-family: "Cooper Black", "Berlin Sans FB", "Aharoni";
+    font-size: 24px;
+}
+
+#over .best {
+    margin-top: -8px;
+}
+
+#final_score.new, #over_best.new {
+    color: red;
+}
+
+ul li {
+    list-style: none;
+}
+
+.buttons {
+    position: relative;
+    top: 15px;
+    left: 14px;
+    width: 240px;
+}
+
+#restart {
+    float: left;
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+#back {
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+#restart:hover, #back:hover {
+    background: yellow;
+}
